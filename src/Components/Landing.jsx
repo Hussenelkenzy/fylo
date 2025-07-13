@@ -1,4 +1,5 @@
 import React from "react";
+import landing_img from "/src/assets/images/illustration-intro.png";
 
 const Landing = () => {
   return (
@@ -7,7 +8,7 @@ const Landing = () => {
         <div className="flex flex-col justify-center items-center pt-[200px]">
           <div className="w-[750px] max-w-full">
             <img
-              src="/src/assets/images/illustration-intro.png"
+              src={landing_img}
               className="w-full h-fit"
               alt="landing-img"
             />
