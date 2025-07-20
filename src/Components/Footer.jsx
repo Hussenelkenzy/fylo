@@ -1,14 +1,19 @@
 import React, { useState } from "react";
 import {FaTwitter, FaInstagram, FaFacebookF } from "react-icons/fa";
+import logo from "/src/assets/images/logo.svg"
+import iconLocation from "/src/assets/images/icon-location.svg"
+import iconPhone from "/src/assets/images/icon-phone.svg"
+import iconEmail from "/src/assets/images/icon-email.svg"
+
 
 function footer() {
   const [contact, setContact] = useState([
     {
-      icon: "icon-phone.svg",
+      icon: iconPhone,
       text: "01203599838",
     },
     {
-      icon: "icon-email.svg",
+      icon: iconEmail,
       text: "fylo@example.com",
     },
   ]);
@@ -33,7 +38,7 @@ function footer() {
       <div className="mx-auto px-4 md:px-8 lg:px-16 xl:px-20 2xl:px-24">
         <a href="#">
           <img
-            src="/src/assets/images/logo.svg"
+            src={logo}
             alt="logo-img"
             className="w-[175px] h-[66px] object-contain"
           />
@@ -41,7 +46,7 @@ function footer() {
         <div className="mt-[30px] flex justify-between flex-wrap flex-col md:flex-row gap-[30px]">
           <div className="flex items-start gap-[15px] w-[340px] max-w-full">
             <img
-              src="/src/assets/images/icon-location.svg"
+              src={iconLocation}
               alt="location-img"
               className="w-[18px] h-[18px] object-contain"
             />
@@ -58,7 +63,7 @@ function footer() {
                 className="flex items-center gap-[15px] mb-[15px] last-of-type:mb-0"
               >
                 <img
-                  src={`/src/assets/images/${item.icon}`}
+                  src={`${item.icon}`}
                   alt="icon"
                   className="w-[18px] h-[18px]"
                 />

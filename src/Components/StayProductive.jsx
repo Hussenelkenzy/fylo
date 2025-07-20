@@ -1,4 +1,6 @@
 import React from "react";
+import StayProductive from "/src/assets/images/illustration-stay-productive.png"
+import iconArrow from "/src/assets/images/icon-arrow.svg"
 
 function StayProductive() {
   return (
@@ -6,7 +8,7 @@ function StayProductive() {
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-[30px] place-items-center">
         <div>
           <img
-            src="/src/assets/images/illustration-stay-productive.png"
+            src={StayProductive}
             alt="Stay-productive"
           />
         </div>
@@ -33,7 +35,7 @@ function StayProductive() {
           </div>
           <a href="" className="text-[#67dbda] hover:text-[#42b0d1] tracking-[0.8px] border-b-2 border-solid border-primary pb-[5px] flex items-center gap-[15px] w-fit transition-all duration-200">
             See how fylo works
-            <img src="/src/assets/images/icon-arrow.svg" alt="arrow-img" className="w-[20px] h-[20px] object-contain animate-bounce-x" />
+            <img src={iconArrow} alt="arrow-img" className="w-[20px] h-[20px] object-contain animate-bounce-x" />
           </a>
         </div>
       </div>

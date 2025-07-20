@@ -7,7 +7,7 @@ function TestmonialBox({name, image, desc, position}) {
             {desc}
         </p>
         <div className='flex items-center gap-[15px]'>
-            <img src={`/src/assets/images/${image}`} className='w-[50px] h-[50px] rounded-full object-contain' />
+            <img src={`${image}`} className='w-[50px] h-[50px] rounded-full object-contain' />
 
             <div>
                 <strong className='block mb-[5px]'>{name}</strong>

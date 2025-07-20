@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import TestmonialBox from "./TestmonialBox";
+import image1 from "/src/assets/images/profile-1.jpg"
+import image2 from "/src/assets/images/profile-2.jpg"
+import image3 from "/src/assets/images/profile-3.jpg"
+import bgQuotes from "/src/assets/images/bg-quotes.png"
 
 function Testimonials() {
   const [TestData, setTestData] = useState([
     {
       id: 1,
       desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt odio rem repellendus voluptatem magni, nihil quam vitae iste doloremque quia temporibus ducimus laborum excepturi suscipit laudantium culpa qui reprehenderit itaque.",
-      image: "profile-1.jpg",
+      image: image1,
       position: "Founder & CEO , Huddle",
       name: "Ahmed",
     },
@@ -14,7 +18,7 @@ function Testimonials() {
     {
       id: 2,
       desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt odio rem repellendus voluptatem magni, nihil quam vitae iste doloremque quia temporibus ducimus laborum excepturi suscipit laudantium culpa qui reprehenderit itaque.",
-      image: "profile-2.jpg",
+      image: image2,
       position: "Founder & CEO , Huddle",
       name: "Mohammed",
     },
@@ -22,7 +26,7 @@ function Testimonials() {
     {
       id: 3,
       desc: " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt odio rem repellendus voluptatem magni, nihil quam vitae iste doloremque quia temporibus ducimus laborum excepturi suscipit laudantium culpa qui reprehenderit itaque.",
-      image: "profile-3.jpg",
+      image: image3,
       position: "Founder & CEO , Huddle",
       name: "Eman",
     },
@@ -31,7 +35,7 @@ function Testimonials() {
     <section className="pb-[350px]">
       <div className="container relative mx-auto px-4 md:px-8 lg:px-16 xl:px-20 2xl:px-24">
           <div className="absolute left-[20px] top-[-35px] lg:left-[90px]">
-            <img src="/src/assets/images/bg-quotes.png" alt="bg-quotes" />
+            <img src={bgQuotes} alt="bg-quotes" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[40px] relative z-10">
             {TestData.map((item)=>(

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import logo from "/src/assets/images/logo.svg"
 
 const Header = () => {
   const headerRef = useRef();
@@ -24,7 +25,7 @@ const Header = () => {
     <header ref={headerRef} className='pt-[50px] z-50 w-full fixed top-0 left-0 transition-all duration-200'>
       <div className='container sm:px-[10px] md:px-[50px] lg:px-[80px] mx-auto flex justify-between items-center gap-[30px] sm:gap-0 flex-col sm:flex-row'>
         <a href="#">
-          <img src="/src/assets/images/logo.svg" alt="logo-img"/>
+          <img src={logo} alt="logo-img"/>
         </a>
 
         <nav>

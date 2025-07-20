@@ -1,4 +1,6 @@
 import React from "react";
+import introImg from "/src/assets/images/illustration-intro.png"
+import curvyDesk from "/src/assets/images/bg-curvy-desktop.svg"
 
 const Landing = () => {
   return (
@@ -7,7 +9,7 @@ const Landing = () => {
         <div className="flex flex-col justify-center items-center pt-[200px]">
           <div className="w-[750px] max-w-full">
             <img
-              src="/src/assets/images/illustration-intro.png"
+              src={introImg}
               className="w-full h-fit"
               alt="landing-img"
             />
@@ -31,7 +33,7 @@ const Landing = () => {
       </div>
 
       <div className="w-full h-[200px]">
-        <img src="/src/assets/images/bg-curvy-desktop.svg" alt="img" className="w-full h-full" />
+        <img src={curvyDesk} alt="img" className="w-full h-full" />
       </div>
     </section>
   );
