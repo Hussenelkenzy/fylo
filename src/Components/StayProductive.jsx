@@ -1,5 +1,5 @@
 import React from "react";
-import StayProductive from "/src/assets/images/illustration-stay-productive.png"
+import stayProductive from "/src/assets/images/illustration-stay-productive.png"
 import iconArrow from "/src/assets/images/icon-arrow.svg"
 
 function StayProductive() {
@@ -8,7 +8,7 @@ function StayProductive() {
       <div className="container grid grid-cols-1 md:grid-cols-2 gap-[30px] place-items-center">
         <div>
           <img
-            src={StayProductive}
+            src={stayProductive}
             alt="Stay-productive"
           />
         </div>
